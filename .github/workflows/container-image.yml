@@ -37,10 +37,10 @@ jobs:
       id: docker_build
       uses: docker/build-push-action@v4
       with:
-        platforms: linux/arm64, linux/amd64
+        platforms: linux/amd64
         file: Containerfile
         push: true
-        tags: ghcr.io/bbusse/swayvnc-build:latest
+        tags: ghcr.io/gresci/alpine-build:latest
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
