@@ -88,7 +88,7 @@ jobs:
 
     - name: Extract build artifact from build container - proj-doc amd64
       uses: bbusse/actions-docker-extract@latest
-      id: extract_proj_dev
+      id: extract_proj_doc
       with:
         image: "ghcr.io/gresci/alpine-build:latest"
         path: "home/packager/packages/community/x86_64/proj-doc-7.0.1-r0.apk"
