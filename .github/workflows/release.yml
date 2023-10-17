@@ -35,14 +35,14 @@ jobs:
     - name: Release
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
-        title: wayvnc
+        title: proj
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         prerelease: false
         automatic_release_tag: "latest"
         files: |
-          wayvnc-0.6.2-r0-x86_64.apk
-          neatvnc-0.6.0-r1-x86_64.apk
-          neatvnc-dev-0.6.0-r1-x86_64.apk
-          wayvnc-0.6.2-r0-aarch64.apk
-          neatvnc-0.6.0-r1-aarch64.apk
-          neatvnc-dev-0.6.0-r1-aarch64.apk
+          proj-7.0.1-r0.apk
+          proj-datumgrid-7.0.1-r0.apk
+          proj-dev-7.0.1-r0.apk
+          proj-doc-7.0.1-r0.apk
+          proj-util-7.0.1-r0.apk
+          APKINDEX.tar.gz
